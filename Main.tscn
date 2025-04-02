@@ -1,6 +1,7 @@
-[gd_scene load_steps=9 format=3 uid="uid://f83ndufs4ng4"]
+[gd_scene load_steps=10 format=3 uid="uid://f83ndufs4ng4"]
 
 [ext_resource type="PackedScene" uid="uid://cicsiwk0ffy8w" path="res://Player.tscn" id="1_glv2v"]
+[ext_resource type="Script" path="res://main.gd" id="1_r0du0"]
 [ext_resource type="ArrayMesh" uid="uid://nnjijketebpn" path="res://dach dach dach.obj" id="2_uu6xs"]
 
 [sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_rxg2q"]
@@ -26,6 +27,7 @@ sky = SubResource("Sky_r0du0")
 margin = 0.0
 
 [node name="World" type="Node3D"]
+script = ExtResource("1_r0du0")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
 
